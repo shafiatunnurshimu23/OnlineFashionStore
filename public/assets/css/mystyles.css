@@ -1,0 +1,82 @@
+/* Mainbar */
+
+.mainbar {
+  background: #edebf4;
+  padding: 15px 80px;
+  box-shadow: 0 15px 15px rgba(90, 18, 18, 0.06);
+  position: sticky;
+  top: 0;
+  left: 0;
+  font-family:sans-serif;
+}
+
+.navbarr {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.navbarr li{
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+  font-size: 12px;
+}
+
+.navbarr li a{
+  text-decoration: none;
+  font-weight: 600;
+  color: #1a1a1a;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+.navbarr li a:hover {
+  color: rgb(19, 212, 19);
+}
+
+.navbarr li a.active {
+  color: rgb(12, 141, 49);
+}
+
+.navbarr li a.active::after,
+.navbarr li a:hover::after{
+  content: "";
+  width: 30%;
+  height: 2px;
+  background:  rgb(57, 100, 70);
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+
+/* Banner Slider */
+
+.swiper{
+  width: 1000px;
+  position: relative;
+}
+.swiper-slide img{
+  width: 1000px;
+
+  object-fit: contain;
+}
+.swiper .swiper-button-prev,.swiper .swiper-button-next{
+  color: rgb(1, 220, 253);
+}
+.swiper .swiper-pagination-bullet-active{
+  background: black;
+  
+}
+
+.swiper-slide-text{
+  position: absolute;
+  top:60% ;
+  text-align: center;
+  align-items: center;
+  margin-left: 250px;
+
+}
